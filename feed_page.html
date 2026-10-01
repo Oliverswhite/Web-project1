@@ -17,17 +17,19 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="faikeIndex.html">Compose</a>
-                    <a class="nav-link" href="profile.html">Profile</a>
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#composeModal" role="button">Compose</a>        
+                    <a class="nav-link" href="kevin.html">Profile</a>
                     <a class="nav-link" href="notifications.html">Notifications</a>
                 </div>
                 </div>
             </div>
-            <div class="container-fluid">
-                <form class="d-flex ms-auto" role="search">
-                    <a href="login.html" class="btn btn-outline-danger">Log Out</a>
+             <form class="d-flex ms-auto" role="search" action="login.html" method="get">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+                        <input class="form-control border-start-0 border-end-0" type="search" placeholder="Search" aria-label="Search" name="q">
+                        <button class="btn btn-primary border border-start-0" type="submit"><i class="bi bi-chevron-right"></i></button>
+                    </div>
                 </form>
-            </div>
         </nav>
         <h1 class="text-center mt-4">
             Welcome To SlugFest
@@ -563,7 +565,7 @@
                             <span class="text-muted">@KevinAAngstadt &middot; August 30</span>
                         </div>
                     
-                        <p class="mb-2 text-dark">Hello world <span class="text-primary text-decoration-underline">#firstslime</span> </p>
+                        <a href="slimes.html" class="mb-2 text-dark text-decoration-none">Hello world <span class="text-primary">#firstslime</span> </a>
                     
                         <div class="d-flex text-muted justify-content-between" style="max-width: 400px;">
                             <a href="#" class="text-muted text-decoration-none">
@@ -583,7 +585,30 @@
                     </div>
                 </div>
             </div>
-       
 
+        <!-- Compose Modal -->
+        <div class="modal fade" id="composeModal" tabindex="-1" role="dialog" aria-labelledby="composeModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="composeModalLabel">Compose Slime</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <textarea class="form-control" rows="3" placeholder="Compose Slime"></textarea>
+                    </div>
+                
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">
+                            Slime <i class="bi bi-arrow-right-circle ms-1"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 
