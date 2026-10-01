@@ -13,3 +13,9 @@
 # After understanding why you should not go out of order for headers and use specific 
 # headers to get the desired size. I successfully made the change to pass the validation 
 # checker.
+
+# Gemini: was used to understand the correct use of d-flex align-items-start and flex-grow-1
+# This way it was managed to align the avatar next to the post text using Flexbox, and  
+# managed to force the post body to take up all remaining horizontal space inside the card. 
+
+
